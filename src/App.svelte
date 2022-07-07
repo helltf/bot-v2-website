@@ -1,11 +1,12 @@
 <script lang="ts">
+  import TailwindCss from './TailwindCSS.svelte';
 import Nav from "./lib/Nav.svelte";
 
 </script>
 
 <main>
+<TailwindCss />
 <Nav/>
-  <h1>Hello World!</h1>
 </main>
 
 <style>
