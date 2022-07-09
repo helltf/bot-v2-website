@@ -19,23 +19,23 @@
 	</div>
 
 	<div class="right-nav flex flex-row justify-between items-center gap-2 pr-48">
-		<a href="https://twitter.com/helltfx">
+		<a class="w-12" href="https://twitter.com/helltfx">
 			<img
-				class="w-16  rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
+				class="rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
 				src="../../../twitter-logo.png"
 				alt="twitter logo link"
 			/>
 		</a>
-		<a href="https://github.com/helltf">
+		<a class="w-12" href="https://github.com/helltf">
 			<img
-				class="w-16 rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
+				class="rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
 				src="../../../github-logo.png"
 				alt="github logo link"
 			/>
 		</a>
-		<a href="https://twitch.tv/helltf">
+		<a class="w-12" href="https://twitch.tv/helltf">
 			<img
-				class="w-16  rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
+				class="rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
 				src="../../../twitch-logo.png"
 				alt="twitch logo link"
 			/>

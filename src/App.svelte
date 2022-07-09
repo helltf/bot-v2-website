@@ -12,7 +12,7 @@
 	<Router {url}>
 		<Nav />
 
-		<div>
+		<div class="w-[700px] h-full m-auto">
 			<Route path="/"><Home /></Route>
 		</div>
 	</Router>
@@ -24,12 +24,9 @@
 			Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		background-color: #303030;
 		color: #ffffff;
+		height: 100%;
 	}
 
-	* {
-		margin: 0;
-		padding: 0;
-	}
 	*::after,
 	*::before {
 		box-sizing: border-box;
