@@ -1,13 +1,18 @@
 <script lang="ts">
-	import { Link } from 'svelte-routing'
+	import NavImage from './NavImage.svelte'
 	import NavLink from './NavLink.svelte'
 </script>
 
 <nav
 	class="shadow-[0_4px_2px_-2px] shadow-neutral-700 w-full h-20 bg-neutral-800 flex flex-row justify-between items-center min-w-[600px]"
 >
-	<div class="left-nav  pl-48">
-		<span class="text-4xl text-red-900">helltf</span>
+	<div
+		class="left-nav ml-48 flex flex-row object-fill items-center gap-1 w-[260px] justify-start"
+	>
+		<div class="flex flex-row  items-center gap-1 ">
+			<span class="text-4xl text-red-800">hell</span>
+			<img class="w-[60px]" src="../../../tf.png" alt="trollface logo" />
+		</div>
 	</div>
 	<div class="mid-nav flex w-full h-full justify-center items-center ">
 		<ul class="flex flex-row justify-center gap-6 ">
@@ -18,27 +23,23 @@
 		</ul>
 	</div>
 
-	<div class="right-nav flex flex-row justify-between items-center gap-2 pr-48">
-		<a class="w-12" href="https://twitter.com/helltfx">
-			<img
-				class="rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
-				src="../../../twitter-logo.png"
-				alt="twitter logo link"
-			/>
-		</a>
-		<a class="w-12" href="https://github.com/helltf">
-			<img
-				class="rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
-				src="../../../github-logo.png"
-				alt="github logo link"
-			/>
-		</a>
-		<a class="w-12" href="https://twitch.tv/helltf">
-			<img
-				class="rounded-full border-2 border-neutral-700 shadow-md shadow-gray-900"
-				src="../../../twitch-logo.png"
-				alt="twitch logo link"
-			/>
-		</a>
+	<div
+		class="right-nav flex flex-row justify-between items-center gap-2 mr-48 "
+	>
+		<NavImage
+			link="https://twitter.com/helltfx"
+			src="../../../twitter-logo.png"
+			alt="twitter logo link"
+		/>
+		<NavImage
+			link="https://github.com/helltf"
+			src="../../../github-logo.png"
+			alt="github logo link"
+		/>
+		<NavImage
+			link="https://twitch.tv/helltf"
+			src="../../../twitch-logo.png"
+			alt="twitch logo link"
+		/>
 	</div>
 </nav>
