@@ -21,7 +21,7 @@
 </script>
 
 <div
-	class="w-[340px] flex flex-col justify-between min-w-[340px] min-h-[200px] bg-neutral-700 rounded-md p-7 shadow-md shadow-neutral-900 gap-2 hover:bg-neutral-600 transition-all"
+	class="w-[340px]  flex flex-col justify-between min-w-[340px] min-h-[200px] bg-neutral-700 rounded-md p-7 shadow-md shadow-neutral-900 gap-2 hover:bg-neutral-500 transition-all"
 >
 	<div class="top flex justify-between">
 		<a href="https://github.com/helltf/{repoName}">
