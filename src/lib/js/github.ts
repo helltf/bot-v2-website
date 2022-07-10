@@ -6,11 +6,15 @@ export const fetchGithubData = async (
 	| undefined
 > => {
 	try {
-		const data = await (await fetch(`${baseUrl}${repoName}`)).json()
+		const [dataJson, languagesJson] = await Promise.all([
+			fetch(`${baseUrl}${repoName}`),
+			fetch(`${baseUrl}${repoName}/languages`),
+		])
 
-		const languages = await (
-			await fetch(`${baseUrl}${repoName}/languages`)
-		).json()
+		const [data, languages] = await Promise.all([
+			dataJson.json(),
+			languagesJson.json(),
+		])
 
 		return {
 			description: data.description ?? 'no description',
