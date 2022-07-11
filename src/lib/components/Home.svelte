@@ -5,8 +5,8 @@
 	import Projects from './Projects.svelte'
 </script>
 
-<div class="flex flex-col m-auto h-[100vh] gap-28">
+<div class="flex flex-col m-auto h-[100vh] gap-24">
 	<HomeInfo />
-	<Projects />
 	<Bots />
+	<Projects />
 </div>

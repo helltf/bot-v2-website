@@ -4,6 +4,6 @@
 	export let linkTo
 </script>
 
-<li class="hover:text-green-800 transition-all">
+<li class="hover:text-red-600 transition-all">
 	<Link to={linkTo}>{linkName}</Link>
 </li>

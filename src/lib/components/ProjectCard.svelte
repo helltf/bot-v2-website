@@ -21,11 +21,11 @@
 </script>
 
 <div
-	class="w-[340px]  flex flex-col justify-between min-w-[340px] min-h-[200px] bg-neutral-700 rounded-md p-7 shadow-md shadow-neutral-900 gap-2 hover:bg-neutral-500 transition-all"
+	class="w-[380px]  flex flex-col justify-between min-w-[340px] min-h-[200px] bg-neutral-700 rounded-md p-7 shadow-md shadow-neutral-900 gap-2 hover:bg-neutral-500 transition-all"
 >
 	<div class="top flex justify-between">
 		<a href="https://github.com/helltf/{repoName}">
-			<h3 class="text-neutral-100">{icon}{title}</h3>
+			<h3 class="text-neutral-100">{title} {icon}</h3>
 		</a>
 		<span>{stars} ⭐</span>
 	</div>
