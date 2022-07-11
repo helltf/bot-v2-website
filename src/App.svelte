@@ -11,8 +11,7 @@
 
 	<Router {url}>
 		<Nav />
-
-		<div class="w-[900px] h-full m-auto">
+		<div>
 			<Route path="/"><Home /></Route>
 		</div>
 	</Router>
