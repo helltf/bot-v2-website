@@ -11,7 +11,7 @@
 	>
 		<div class="flex flex-row  items-center gap-1 ">
 			<span class="text-4xl text-red-600">hell</span>
-			<img class="w-[60px]" src="./../../../tf.png" alt="trollface logo" />
+			<img class="w-[60px]" src="./tf.png" alt="trollface logo" />
 		</div>
 	</div>
 	<div class="mid-nav flex w-full h-full justify-center items-center ">
@@ -28,17 +28,17 @@
 	>
 		<NavImage
 			link="https://twitter.com/helltfx"
-			src="./../../../twitter-logo.png"
+			src="./twitter-logo.png"
 			alt="twitter logo link"
 		/>
 		<NavImage
 			link="https://github.com/helltf"
-			src="./../../../github-logo.png"
+			src="./github-logo.png"
 			alt="github logo link"
 		/>
 		<NavImage
 			link="https://twitch.tv/helltf"
-			src="./../../../twitch-logo.png"
+			src="./twitch-logo.png"
 			alt="twitch logo link"
 		/>
 	</div>
