@@ -13,9 +13,9 @@
 		<Nav />
 		<div>
 			<Route path=""><Home /></Route>
-			<Route path="/info"><Home /></Route>
-			<Route path="/commands"><Home /></Route>
-			<Route path="/stats"><Home /></Route>
+			<Route path="info"><h1>Oh</h1></Route>
+			<Route path="commands"><h1>Oh</h1></Route>
+			<Route path="stats"><h1>Oh</h1></Route>
 		</div>
 	</Router>
 </main>

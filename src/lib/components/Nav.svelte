@@ -14,10 +14,10 @@
 	</div>
 	<div class="mid-nav flex w-full h-full justify-center items-center ">
 		<ul class="flex flex-row justify-center gap-6 ">
-			<NavLink linkName={'Home'} linkTo="/" />
-			<NavLink linkName={'Info'} linkTo="/info" />
-			<NavLink linkName={'Commands'} linkTo="/commands" />
-			<NavLink linkName={'Stats'} linkTo="/stats" />
+			<NavLink linkName={'Home'} linkTo="" />
+			<NavLink linkName={'Info'} linkTo="info" />
+			<NavLink linkName={'Commands'} linkTo="commands" />
+			<NavLink linkName={'Stats'} linkTo="stats" />
 		</ul>
 	</div>
 
