@@ -9,7 +9,7 @@
 <main>
 	<TailwindCss />
 
-	<Router {url}>
+	<Router {url} basepath="bot-v2-website">
 		<Nav />
 		<div>
 			<Route path="/"><Home /></Route>
