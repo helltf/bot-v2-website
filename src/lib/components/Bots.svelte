@@ -8,7 +8,7 @@
 	>
 		<BotCard
 			bg="bg-red-600"
-			href="/home"
+			href="https://github.com/helltf/twitchbot#readme"
 			description="First bot I've created with Javascript - This project is no longer maintened but still online"
 			title="helltfbot"
 		/>
