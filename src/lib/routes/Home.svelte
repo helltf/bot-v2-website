@@ -1,1 +1,5 @@
-<h1>Home</h1>
+<script>
+	import Home from '../components/Home.svelte'
+</script>
+
+<Home />

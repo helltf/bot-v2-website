@@ -9,11 +9,13 @@
 <main>
 	<TailwindCss />
 
-	<Router {url}>
+	<Router {url} basepath="/bot-v2-website">
 		<Nav />
-
 		<div>
-			<Route path="/"><Home /></Route>
+			<Route path=""><Home /></Route>
+			<Route path="/info"><Home /></Route>
+			<Route path="/commands"><Home /></Route>
+			<Route path="/stats"><Home /></Route>
 		</div>
 	</Router>
 </main>
@@ -22,14 +24,11 @@
 	:root {
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 			Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		background-color: #303030;
+		background-color: #282828;
 		color: #ffffff;
+		height: 100%;
 	}
 
-	* {
-		margin: 0;
-		padding: 0;
-	}
 	*::after,
 	*::before {
 		box-sizing: border-box;
