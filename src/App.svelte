@@ -12,7 +12,10 @@
 	<Router {url} basepath="/bot-v2-website">
 		<Nav />
 		<div>
-			<Route path="/"><Home /></Route>
+			<Route path=""><Home /></Route>
+			<Route path="/info"><Home /></Route>
+			<Route path="/commands"><Home /></Route>
+			<Route path="/stats"><Home /></Route>
 		</div>
 	</Router>
 </main>

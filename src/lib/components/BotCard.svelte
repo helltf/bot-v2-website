@@ -17,6 +17,6 @@
 		{href}
 	>
 		<span class="text-neutral-500 text-sm">view commands</span>
-		<img src="./../../arrow.svg" alt="arrow" />
+		<img src="./arrow.svg" alt="arrow" />
 	</a>
 </div>
