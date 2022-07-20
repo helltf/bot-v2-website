@@ -16,9 +16,8 @@
     <div>
       <Route path=""><Home /></Route>
       <Route path="info"><h1>Oh</h1></Route>
-      <Route path="commands"><h1>Oh</h1></Route>
+      <Route path="commands"><Command /></Route>
       <Route path="stats"><h1>Oh</h1></Route>
-      <Route path="callback"><Callback /></Route>
     </div>
   </Router>
 </main>
