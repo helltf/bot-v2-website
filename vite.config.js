@@ -7,5 +7,5 @@ export default defineConfig({
 	css: {
 		postcss,
 	},
-	base: './',
+	base: '/bot-v2-website/',
 })
