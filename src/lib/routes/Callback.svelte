@@ -1,7 +1,13 @@
-<script>
-  import { onMount } from 'svelte';
+<script lang="ts">
+	import { onMount } from 'svelte'
+	import { navigate } from 'svelte-routing'
 
-  onMount(() => {
-    console.log(document.location.hash);
-  });
+	const getToken = (): string | null =>
+		new URLSearchParams(document.location.search).get('code')
+
+	onMount(() => {
+		const token = getToken()
+
+		navigate('')
+	})
 </script>
