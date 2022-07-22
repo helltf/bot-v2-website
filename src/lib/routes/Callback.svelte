@@ -8,6 +8,6 @@
 	onMount(() => {
 		const token = getToken()
 
-		navigate('')
+		navigate('home')
 	})
 </script>
