@@ -1,11 +1,12 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import { navigate } from 'svelte-routing'
+  import { getCode, getToken, sendToken } from '../js/twitch.js'
 
-  const getToken = (): string | null => new URLSearchParams(document.location.search).get('code')
-
-  onMount(() => {
-    const token = getToken()
+  onMount(async () => {
+    const token = await getToken(getCode())
+    console.log(token.access_token)
+    await sendToken(token)
 
     navigate('home')
   })
