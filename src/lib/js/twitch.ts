@@ -9,14 +9,15 @@ export interface TwitchATResponse {
 export const getCode = (): string | null =>
   new URLSearchParams(document.location.search).get('code')
 
-export const sendToken = async (token: TwitchATResponse) => {
+export const sendToken = async (tokenData: TwitchATResponse) => {
   await fetch(import.meta.env.VITE_BACKEND_URL + 'token', {
     method: 'post',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      token: token.access_token
+      token: tokenData.access_token,
+      refresh_token: tokenData.refresh_token
     })
   })
 }
