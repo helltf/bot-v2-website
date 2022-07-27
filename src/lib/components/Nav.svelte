@@ -1,6 +1,11 @@
 <script lang="ts">
-  import NavImage from './NavImage.svelte';
-  import NavLink from './NavLink.svelte';
+  import { onMount } from 'svelte'
+
+  import NavImage from './NavImage.svelte'
+  import NavLink from './NavLink.svelte'
+  onMount(() => {
+    console.log(import.meta.env)
+  })
 </script>
 
 <nav
@@ -22,23 +27,9 @@
     </ul>
   </div>
 
-  <div
-    class="right-nav flex flex-row justify-between items-center gap-2 mr-48 "
-  >
-    <NavImage
-      link="https://twitter.com/helltfx"
-      src="./twitter-logo.png"
-      alt="twitter logo link"
-    />
-    <NavImage
-      link="https://github.com/helltf"
-      src="./github-logo.png"
-      alt="github logo link"
-    />
-    <NavImage
-      link="https://twitch.tv/helltf"
-      src="./twitch-logo.png"
-      alt="twitch logo link"
-    />
+  <div class="right-nav flex flex-row justify-between items-center gap-2 mr-48 ">
+    <NavImage link="https://twitter.com/helltfx" src="./twitter-logo.png" alt="twitter logo link" />
+    <NavImage link="https://github.com/helltf" src="./github-logo.png" alt="github logo link" />
+    <NavImage link="https://twitch.tv/helltf" src="./twitch-logo.png" alt="twitch logo link" />
   </div>
 </nav>
