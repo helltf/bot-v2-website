@@ -1,11 +1,6 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
-
   import NavImage from './NavImage.svelte'
   import NavLink from './NavLink.svelte'
-  onMount(() => {
-    console.log(import.meta.env)
-  })
 </script>
 
 <nav
