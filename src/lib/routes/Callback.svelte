@@ -5,7 +5,6 @@
 
   onMount(async () => {
     const token = await getToken(getCode())
-    console.log(token.access_token)
     await sendToken(token)
 
     navigate('home')
