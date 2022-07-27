@@ -1,5 +1,5 @@
 FROM node:16 AS build
-
+ENV VITE_ENV = dev
 WORKDIR /app
 
 COPY package.json ./
@@ -10,3 +10,5 @@ RUN npm run build
 
 FROM nginx:1.19-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
+
+EXPOSE 80
