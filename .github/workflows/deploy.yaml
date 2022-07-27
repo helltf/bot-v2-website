@@ -30,3 +30,6 @@ jobs:
           folder: dist
         env:
           VITE_ENV: prod
+          VITE_TWITCH_LOGIN: https://id.twitch.tv/oauth2/authorize?response_type=code&client_id=b6uhkaukifr993zprguyesbminengw&redirect_uri=http://localhost:3000/callback&scope=user%3Aread%3Aemail
+          VITE_TWITCH_CLIENT_ID: ${{ secrets.TWITCH_ID }}
+          VITE_TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_SECRET }}
