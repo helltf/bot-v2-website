@@ -1,6 +1,6 @@
 <script lang="ts">
   import TailwindCss from './TailwindCSS.svelte'
-  import Nav from './lib/components/Nav.svelte'
+  import Nav from './lib/components/navbar/Nav.svelte'
   import { Router, Route } from 'svelte-routing'
   import Home from './lib/routes/Home.svelte'
   import Callback from './lib/routes/Callback.svelte'
