@@ -1,5 +1,5 @@
 <script>
-  import Command from '../../lib/components/Command.svelte';
+  import Command from '../../lib/components/commands/Command.svelte'
 </script>
 
 <Command />
