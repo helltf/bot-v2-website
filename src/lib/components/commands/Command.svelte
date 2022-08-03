@@ -4,7 +4,7 @@
 
   import { onMount } from 'svelte'
   import CommandSidebar from './CommandSidebar.svelte'
-
+  export let command: string
   let commands: Command[] = []
 
   onMount(async () => {
@@ -19,7 +19,7 @@
 <div class="flex flex-row ml-40 mr-40 gap-5">
   <div class="w-[200px]">
     {#if commands.length}
-      <CommandSidebar commands={getNames()} />
+      <CommandSidebar selected={command} commands={getNames()} />
     {/if}
   </div>
   <div class="w-[100%] h-[100%] bg-white" />
