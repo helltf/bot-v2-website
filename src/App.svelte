@@ -8,12 +8,12 @@
   export let url = ''
 </script>
 
-<main>
+<main class="h-full">
   <TailwindCss />
 
   <Router {url} basepath={import.meta.env.VITE_ENV === 'prod' ? '/bot-v2-website/' : undefined}>
     <Nav />
-    <div>
+    <div class="h-full">
       <Route path=""><Home /></Route>
       <Route path="info"><h1>Oh</h1></Route>
       <Route path="commands/:name" let:params><Command command={params.name} /></Route>
