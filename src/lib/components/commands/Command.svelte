@@ -1,26 +1,26 @@
 <script lang="ts">
-  import { fetchCommands } from '../../../lib/js/commands'
+  import { fetchCommands, getCommandNames } from '../../../lib/js/commands'
   import type { Command } from '../../../lib/js/commands'
 
   import { onMount } from 'svelte'
   import CommandSidebar from './CommandSidebar.svelte'
   export let command: string
-  let commands: Command[] = []
+  let commands: string[] = []
 
   onMount(async () => {
-    commands = await fetchCommands(import.meta.env.VITE_BACKEND_URL + 'commands')
+    commands = await getNames()
   })
 
-  const getNames = (): string[] => {
-    return commands.map((command) => command.name)
+  const getNames = async (): Promise<string[]> => {
+    return await getCommandNames()
   }
 </script>
 
-<div class="flex flex-row ml-40 mr-40 gap-5">
-  <div class="w-[200px]">
+<div class="flex flex-row ml-40 mr-40 gap-5 h-full">
+  <div class="w-[200px] h-full">
     {#if commands.length}
-      <CommandSidebar selected={command} commands={getNames()} />
+      <CommandSidebar selected={command} {commands} />
     {/if}
   </div>
-  <div class="w-[100%] h-[100%] bg-white" />
+  <div class="w-full h-full" />
 </div>
