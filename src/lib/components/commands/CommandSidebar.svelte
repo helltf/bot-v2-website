@@ -5,10 +5,10 @@
   export let selected: string
 </script>
 
-<aside class="flex flex-col overflow-y-scroll overflow-x-hidden h-[100vh]">
-  <section class="text-neutral-300 text-xl pb-2">Commands</section>
+<aside class="flex flex-col overflow-y-scroll overflow-x-hidden h-[100vh] w-[100%]">
+  <h3 class="pt-4  text-neutral-300 text-2xl pb-2">Commands</h3>
 
   {#each commands as command}
-    <Link to="commands/{command}">{command}</Link>
+    <Link class={command === selected ? 'text-black' : ''} to="commands/{command}">{command}</Link>
   {/each}
 </aside>

@@ -23,7 +23,7 @@
     on:mouseover={onHover}
     class="{hovered
       ? bg
-      : 'bg-white'} w-[70%] transition-all rounded-sm flex flew-col justify-between p-2 border-white border-2 rounded-sm"
+      : 'bg-white'} w-[70%] transition-all flex flew-col justify-between p-2 border-white border-2 rounded-sm"
     {href}
   >
     <span class="{hovered ? 'text-white' : 'text-neutral-500'}  text-sm">view commands</span>
