@@ -1,5 +1,5 @@
 FROM node:16 AS build
-ENV VITE_ENV = dev
+ENV VITE_ENV = prod
 WORKDIR /app
 
 COPY package.json ./
