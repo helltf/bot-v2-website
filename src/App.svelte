@@ -10,7 +10,7 @@
 <main>
   <TailwindCss />
 
-  <Router {url} basepath={import.meta.env.VITE_ENV === 'prod' ? '/bot-v2-website/' : undefined}>
+  <Router {url} basepath={""}>
     <Nav />
     <div>
       <Route path=""><Home /></Route>
