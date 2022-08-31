@@ -1,12 +1,12 @@
 <script>
-  import Bots from './Bots.svelte'
+	import Bots from './Bots.svelte'
 
-  import HomeInfo from './HomeInfo.svelte'
-  import Projects from './Projects.svelte'
+	import HomeInfo from './HomeInfo.svelte'
+	import Projects from './Projects.svelte'
 </script>
 
 <div class="flex flex-col m-auto h-[100vh] gap-24">
-  <HomeInfo />
-  <Bots />
-  <Projects />
+	<HomeInfo />
+	<Bots />
+	<Projects />
 </div>
