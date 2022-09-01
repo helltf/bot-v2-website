@@ -1,27 +1,25 @@
 <script lang="ts">
-  import TailwindCss from './TailwindCSS.svelte'
-  import Nav from './lib/components/navbar/Nav.svelte'
-  import { Router, Route } from 'svelte-routing'
-  import Home from './lib/routes/Home.svelte'
-  import Callback from './lib/routes/Callback.svelte'
-  import Command from './lib/routes/Command.svelte'
-  export let url = ''
+	import TailwindCss from './TailwindCSS.svelte'
+	import Nav from './lib/components/navbar/Nav.svelte'
+	import { Router, Route } from 'svelte-routing'
+	import Home from './lib/routes/Home.svelte'
+	import Callback from './lib/routes/Callback.svelte'
+	export let url = ''
 </script>
 
 <main class="h-full">
   <TailwindCss />
 
-  <Router {url} basepath={import.meta.env.VITE_ENV === 'prod' ? '/bot-v2-website/' : undefined}>
-    <Nav />
-    <div class="h-full">
-      <Route path=""><Home /></Route>
-      <Route path="info"><h1>Oh</h1></Route>
-      <Route path="commands/:name" let:params><Command command={params.name} /></Route>
-      <Route path="commands"><Command command={'allow'} /></Route>
-      <Route path="stats"><h1>Oh</h1></Route>
-      <Route path="callback"><Callback /></Route>
-    </div>
-  </Router>
+	<Router {url} basepath={''}>
+		<Nav />
+		<div>
+			<Route path=""><Home /></Route>
+			<Route path="info"><h1>Oh</h1></Route>
+			<Route path="commands"><h1>Oh</h1></Route>
+			<Route path="stats"><h1>Oh</h1></Route>
+			<Route path="callback"><Callback /></Route>
+		</div>
+	</Router>
 </main>
 
 <style>
