@@ -1,4 +1,6 @@
 <script>
+	import arrow from '../../../assets/arrow.svg'
+
 	export let bg
 	export let description
 	export let title
@@ -31,6 +33,6 @@
 		<span class="{hovered ? 'text-white' : 'text-neutral-500'}  text-sm"
 			>view commands</span
 		>
-		<img src="./arrow.svg" alt="arrow" />
+		<img src={arrow} alt="arrow" />
 	</a>
 </div>

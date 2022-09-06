@@ -1,6 +1,11 @@
 <script lang="ts">
 	import NavImage from './NavImage.svelte'
 	import NavLink from './NavLink.svelte'
+
+	import tfPic from '../../../assets/tf.png'
+	import twitchLogo from '../../../assets/twitch-logo.png'
+	import githubLogo from '../../../assets/github-logo.png'
+	import twitterLogo from '../../../assets/twitter-logo.png'
 </script>
 
 <nav
@@ -9,7 +14,7 @@
 	<div class="ml-48 left-nav flex flex-row items-center gap-1 justify-start">
 		<span class="text-4xl text-red-600">hell</span>
 		<div class="w-[60px]">
-			<img src="./tf.png" alt="trollface logo" width="60" height="60" />
+			<img src={tfPic} alt="trollface logo" width="60" height="60" />
 		</div>
 	</div>
 	<div class="mid-nav flex w-full h-full justify-center items-center ">
@@ -27,17 +32,17 @@
 	>
 		<NavImage
 			link="https://twitter.com/helltfx"
-			src="./twitter-logo.png"
+			src={twitterLogo}
 			alt="twitter logo link"
 		/>
 		<NavImage
 			link="https://github.com/helltf"
-			src="./github-logo.png"
+			src={githubLogo}
 			alt="github logo link"
 		/>
 		<NavImage
 			link="https://twitch.tv/helltf"
-			src="./twitch-logo.png"
+			src={twitchLogo}
 			alt="twitch logo link"
 		/>
 	</div>
