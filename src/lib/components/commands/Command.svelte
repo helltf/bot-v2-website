@@ -16,7 +16,7 @@
 </script>
 
 <div class="flex flex-row mx-40 gap-5 h-full">
-	<div class="w-96 h-full">
+	<div class="w-80 h-full">
 		{#if commands.length}
 			<CommandSidebar selected={command} {commands} />
 		{/if}
