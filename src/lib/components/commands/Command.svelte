@@ -3,6 +3,7 @@
 
 	import { onMount } from 'svelte'
 	import CommandSidebar from './CommandSidebar.svelte'
+	import SelectedCommand from 'src/lib/components/commands/SelectedCommand.svelte'
 	export let command: string
 	let commands: string[] = []
 
@@ -21,5 +22,5 @@
 			<CommandSidebar selected={command} {commands} />
 		{/if}
 	</div>
-	<div class="w-full h-full overflow-y-scroll" />
+	<SelectedCommand />
 </div>
