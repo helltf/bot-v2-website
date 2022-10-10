@@ -3,7 +3,7 @@ ENV VITE_ENV = prod
 WORKDIR /app
 
 COPY package.json ./
-COPY package-lock.json ./
+COPY yarn.lock ./
 RUN yarn install
 COPY . ./
 RUN yarn build
