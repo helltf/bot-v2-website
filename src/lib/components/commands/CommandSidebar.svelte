@@ -12,10 +12,8 @@
 	}
 </script>
 
-<aside
-	class="flex flex-col h-full w-full gap-3 p-1 overflow-y-auto overflow-x-hidden "
->
-	<div class="sticky top-0">
+<aside class="flex flex-col h-full w-full p-1 gap-3 overflow-x-hidden ">
+	<div class="sticky top-0 bg-neutral-800">
 		<h3 class="pt-4 text-neutral-300 text-2xl pb-2">Commands</h3>
 
 		<input
@@ -26,7 +24,7 @@
 			on:input={filterCommands}
 		/>
 	</div>
-	<div class="flex flex-col  gap-1">
+	<div class="flex flex-col overflow-y-auto gap-1">
 		{#each selectedCommands as command}
 			<Link
 				class="{command === selected
