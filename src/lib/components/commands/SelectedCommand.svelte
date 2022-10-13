@@ -26,7 +26,7 @@
 	<div class="w-full h-full overflow-y-scroll p-12">
 		<h2 class="text-5xl">{command.name}</h2>
 		{#each Object.entries(mappings) as [key, value]}
-			<CommandInfo heading={value} info={key} />
+			<CommandInfo heading={value} info={command[key] ?? 'none'} />
 		{/each}
 	</div>
 {/if}
