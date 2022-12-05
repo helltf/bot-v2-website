@@ -3,6 +3,6 @@
 	import { navigate } from 'svelte-routing'
 
 	onMount(() => {
-		navigate('commands/add')
+		navigate('commands/accept')
 	})
 </script>
