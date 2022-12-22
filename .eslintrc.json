@@ -12,7 +12,6 @@
 		{
 			"files": ["*.svelte"],
 			"parser": "svelte-eslint-parser",
-			// Parse the `<script>` in `.svelte` as TypeScript by adding the following configuration.
 			"parserOptions": {
 				"parser": "@typescript-eslint/parser"
 			}
@@ -28,6 +27,7 @@
 	"rules": {
 		"indent": ["error", "tab"],
 		"quotes": ["error", "single"],
-		"semi": ["error", "never"]
+		"semi": ["error", "never"],
+		"no-mixed-spaces-and-tabs": 1
 	}
 }

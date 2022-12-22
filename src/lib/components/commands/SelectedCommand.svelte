@@ -17,14 +17,14 @@
 	}
 
   const onChange = async(selectedCommand: string) => {
-    command = await getCommandInfo(selectedCommand)
+  	command = await getCommandInfo(selectedCommand)
   }
 
   const parse = (data: string | string[] | number):string => {
-    if(typeof data === 'string' ) return data as string
-    if(typeof data === 'object') {
-      return data.length > 0 ? data.join(", "): 'none' }
-    return `${data}`
+  	if(typeof data === 'string' ) return data as string
+  	if(typeof data === 'object') {
+  		return data.length > 0 ? data.join(', '): 'none' }
+  	return `${data}`
   }
 
   $: onChange(selected)
