@@ -9,8 +9,10 @@ export const getCommandNames = async (): Promise<string[]> => {
 	return commandNames
 }
 
-export const getCommandInfo = async(command: string): Promise<Command> => {
-	return (await (await fetch(import.meta.env.VITE_BACKEND_URL + `command/name/${command}`)).json()) as Command
+export const getCommandInfo = async (command: string): Promise<Command> => {
+	return (await (
+		await fetch(import.meta.env.VITE_BACKEND_URL + `command/name/${command}`)
+	).json()) as Command
 }
 
 export declare interface Command {
@@ -18,8 +20,8 @@ export declare interface Command {
 	counter: number
 	permissions: number
 	description: string
-	requiredParams: string[]
-	optionalParams: string[]
+	required_params: string[]
+	optional_params: string[]
 	cooldown: number
 	deleted: boolean
 	alias: string[]
